@@ -1,0 +1,199 @@
+Boa — isso já dá outro nível ao teu sistema 🔥
+Mas vou ser direto contigo: não posso inserir o logo oficial da Kixi aqui automaticamente, então tens que **baixar a imagem do logo e colocar no teu projeto**.
+
+Vou te mostrar como fazer **corretamente e profissional** 👇
+
+---
+
+# 🧩 PASSO 1 — Colocar o logo no projeto
+
+Dentro da tua pasta:
+
+```
+kixi-system/
+```
+
+Cria uma pasta:
+
+```
+assets/
+```
+
+E coloca lá o logo, por exemplo:
+
+```
+assets/logo.png
+```
+
+---
+
+# 🎨 PASSO 2 — Atualizar o HTML com o logo
+
+Substitui o teu código por este (já com o logo incluído):
+
+```html id="o9l2y6"
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Kixi Sistema</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ff7a00, #ffb347);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-box {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-box label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .input-box input:focus {
+      border-color: #ff7a00;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background: #ff7a00;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e66900;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="login-box">
+
+    <!-- LOGO -->
+    <img src="assets/logo.png" alt="Logo Kixi" class="logo">
+
+    <h2>Login</h2>
+
+    <form action="login.php" method="POST">
+      
+      <div class="input-box">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" required>
+      </div>
+
+      <div class="input-box">
+        <label>Senha</label>
+        <input type="password" name="password" placeholder="Digite sua senha" required>
+      </div>
+
+      <button type="submit" class="btn">Entrar</button>
+
+    </form>
+
+    <div class="footer">
+      Sistema de Microfinanças
+    </div>
+
+  </div>
+
+</body>
+</html>
+```
+
+---
+
+# ⚠️ IMPORTANTE (senão não funciona)
+
+✔ O nome do ficheiro tem que ser exatamente:
+
+```
+logo.png
+```
+
+✔ E o caminho:
+
+```
+assets/logo.png
+```
+
+✔ Se não aparecer:
+
+* verifica se a pasta está certa
+* vê se o nome não está tipo `logo (1).png`
+
+---
+
+# 🔥 Resultado
+
+Agora tua tela vai ter:
+
+* Fundo laranja 🟠
+* Caixa branca elegante
+* Logo no topo (profissional 💼)
+
+---
+
+## 🚀 Próximo upgrade (recomendado)
+
+Podemos agora:
+
+👉 Colocar **ícones dentro dos inputs (email e senha)**
+👉 Ou fazer o **login funcionar de verdade com banco de dados**
+
+Diz só:
+**“ícones”** ou **“login real”** 👇
