@@ -1,0 +1,297 @@
+/* css/credito.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* MENU */
+
+.menu{
+    width: 100%;
+    height: 80px;
+    background: #007a39;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+.logo h2{
+    color: white;
+}
+
+.menu nav{
+    display: flex;
+    gap: 25px;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu nav a:hover,
+.menu nav .ativo{
+    color: #f58220;
+}
+
+/* HERO */
+
+.hero{
+    height: 500px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("../img/fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-conteudo{
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+
+    background: #e2770b;
+    color: #000;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover{
+    transform: scale(1.05);
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+    width: 90%;
+    margin: -60px auto 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.box{
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.box h2{
+    color: #007a39;
+    font-size: 35px;
+}
+
+/* TÍTULO */
+
+.titulo-section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-section h1{
+    font-size: 40px;
+    color: #007a39;
+}
+
+.titulo-section p{
+    color: #666;
+    margin-top: 10px;
+}
+
+/* CARDS */
+
+.creditos{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+.card{
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    position: relative;
+
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.destaque{
+    border: 3px solid #007a39;
+}
+
+.tag{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: #007a39;
+    padding: 7px 14px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.icone{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card h2{
+    color: #f58220;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.info span{
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card button{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f58220;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: #f58220;
+}
+
+/* TABELA */
+
+.tabela-section{
+    width: 90%;
+    margin: 80px auto;
+}
+
+.tabela-section h1{
+    margin-bottom: 20px;
+    color: #007a39;
+}
+
+table{
+    width: 100%;
+    background: white;
+
+    border-collapse: collapse;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+table th{
+    background: #007a39;
+    color: white;
+
+    padding: 15px;
+    text-align: left;
+}
+
+table td{
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.aprovado{
+    color: #007a39;
+    font-weight: bold;
+}
+
+.pendente{
+    color: #007a39;
+    font-weight: bold;
+}

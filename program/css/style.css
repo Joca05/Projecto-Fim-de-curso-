@@ -1,0 +1,254 @@
+/* ==========================================
+   RESET
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --green:#009245;
+    --orange:#f58220;
+    --white:#ffffff;
+    --text:#1f2937;
+    --muted:#6b7280;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #009245 0%,
+        #00a651 50%,
+        #f58220 100%
+    );
+}
+
+/* ==========================================
+   CARD LOGIN
+========================================== */
+.card{
+    width:100%;
+    max-width:480px;
+
+    background:rgba(255,255,255,0.98);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.20);
+
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+.card-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.login-logo{
+    width:140px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.card-header h1{
+    font-size:38px;
+    color:var(--text);
+    margin-bottom:8px;
+}
+
+.card-header p{
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.field label{
+    display:block;
+    margin-bottom:8px;
+
+    font-size:13px;
+    font-weight:600;
+
+    color:#555;
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+.input-wrap{
+    position:relative;
+}
+
+.icon{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:.6;
+}
+
+.input-wrap input{
+    width:100%;
+    height:55px;
+
+    padding-left:45px;
+
+    border:1px solid #dcdcdc;
+    border-radius:12px;
+
+    background:#f7f7f7;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.input-wrap input:focus{
+    outline:none;
+
+    border-color:var(--orange);
+
+    box-shadow:
+    0 0 0 4px rgba(245,130,32,.15);
+}
+
+/* ==========================================
+   OPÇÕES
+========================================== */
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:14px;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.remember input{
+    accent-color:var(--green);
+}
+
+.forgot{
+    color:var(--orange);
+    text-decoration:none;
+    font-weight:500;
+}
+
+.forgot:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+   BOTÃO
+========================================== */
+.btn{
+    width:100%;
+    height:55px;
+
+    border:none;
+    border-radius:12px;
+
+    background:linear-gradient(
+        90deg,
+        #009245,
+        #f58220
+    );
+
+    color:white;
+
+    font-size:17px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   REGISTO
+========================================== */
+.register{
+    margin-top:25px;
+    text-align:center;
+
+    color:var(--muted);
+}
+
+.register a{
+    color:var(--orange);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+@media(max-width:600px){
+
+    .card{
+        width:90%;
+        padding:30px;
+    }
+
+    .login-logo{
+        width:110px;
+    }
+
+    .card-header h1{
+        font-size:30px;
+    }
+
+}
